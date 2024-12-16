@@ -1,0 +1,13 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Paul Fletes
+	email = paul.fletes@gmail.com
+[core]
+	editor = code --wait
+	autocrlf = true
+[init]
+	defaultBranch = main
